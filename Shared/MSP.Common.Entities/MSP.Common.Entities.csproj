@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>MSP.13.06.2024.BINTRA.2023</PackageId>
+    <Title>MSP.Common.Entities</Title>
+    <Description>Micro Service Perso Common Entities</Description>
+    <Version>1.0.0</Version>
+    <Authors>Innocent TRA BI</Authors>
+    <Company>Bintra Group</Company>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="licenses\LICENSE.txt" Pack="true" Visible="false" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
