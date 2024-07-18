@@ -6,8 +6,8 @@ name: NET PIPELINE
 on:
   push:
     branches: ["dev"]
-  pull_request:
-    branches: ["dev"]
+  #pull_request:
+    #branches: ["dev"]
     
 jobs:
   build:
@@ -38,6 +38,4 @@ jobs:
 
     - name: End Build
       run: echo "Fin du pipeline"
-    
-      
      
