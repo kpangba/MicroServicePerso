@@ -6,6 +6,6 @@ jobs:
     steps:
         - name: Print Step
           run: |
-            - echo "Bienvenue Mbappe"
-            - echo "Maman pile du foutou"
-            - echo "Bile regarde la télé"
+            echo "Bienvenue Mbappe"
+            echo "Maman pile du foutou"
+            echo "Bile regarde la tÃ©lÃ©"
