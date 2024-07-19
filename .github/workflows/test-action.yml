@@ -1,0 +1,40 @@
+# This workflow will build a .NET project
+
+name: NET PIPELINE
+
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'dev'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Debut Pipeline
+      run: echo "Debut Pipeline"
+
+    # Cloner le code
+    - name: Clone du Code
+      uses: actions/checkout@v4
+    
+    # SETUP DE NET
+    - name: Setup NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    
+    - name: NET Restore
+      run: dotnet restore
+
+    - name: NET Build
+      run: dotnet build --no-restore
+
+    - name: NET Test
+      run: dotnet test --no-build --verbosity normal
+
+    - name: End Build
+      run: echo "Fin du pipeline"
+     
